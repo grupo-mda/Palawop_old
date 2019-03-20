@@ -1,0 +1,57 @@
+<ion-content>
+
+
+    <ion-grid>
+
+        <ion-row justify-content-center>
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+
+                <div text-center>
+                    <h4>Sign up</h4>
+                </div>
+
+                <div padding>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label position="floating">User</ion-label>
+                            <ion-input
+                                    type="text"
+                                    [(ngModel)]="username"
+                                    (keyup.enter)="signUp();"
+                                    autofocus
+                            ></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label position="floating">Password</ion-label>
+                            <ion-input
+                                    type="password"
+                                    [(ngModel)]="password"
+                                    (keyup.enter)="signUp();"
+                            ></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label position="floating">Repeat your password</ion-label>
+                            <ion-input
+                                    type="password"
+                                    [(ngModel)]="cPassword"
+                                    (keyup.enter)="signUp();"
+                            ></ion-input>
+                        </ion-item>
+                    </ion-list>
+                </div>
+                <div padding>
+                    <ion-button expand="block" color="dark" (click)="signUp()">Sign in</ion-button>
+                </div>
+                <div padding>
+                    <p>Have an account? <a
+                            routerLink="../login"
+                            routerDirection="forward">
+                        Log in</a>
+                    </p>
+                </div>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+
+</ion-content>

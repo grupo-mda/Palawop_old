@@ -35,4 +35,4 @@ UserInterfaceState.xcuserstate
 
 *.zip
 src/app/const.ts
-src/environments/*
+src/environments/

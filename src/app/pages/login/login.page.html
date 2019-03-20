@@ -1,0 +1,57 @@
+<ion-content>
+
+
+    <ion-grid>
+
+        <ion-row justify-content-center>
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+
+                <div text-center>
+                    <h4>Palawop</h4>
+                </div>
+
+                <div padding>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label position="floating">User</ion-label>
+                            <ion-input
+                                    type="text"
+                                    [(ngModel)]="username"
+                                    (keyup.enter)="login();"
+                                    autofocus>
+
+                            </ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label position="floating">Password</ion-label>
+                            <ion-input
+                                    type="password"
+                                    [(ngModel)]="password"
+                                    (keyup.enter)="login();">
+                            </ion-input>
+                        </ion-item>
+                    </ion-list>
+                </div>
+                <div padding>
+                    <ion-button
+                            expand="block"
+                            color="dark"
+                            (click)="login()">
+                        Login
+                    </ion-button>
+                </div>
+                <div padding>
+                    <ion-button
+                            expand="block"
+                            color="dark"
+                            routerLink="../register"
+                            routerDirection="forward">
+                        Sign up
+                    </ion-button>
+                </div>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+
+</ion-content>

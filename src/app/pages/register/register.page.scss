@@ -1,0 +1,18 @@
+ion-grid {
+
+  margin-top: 4rem;
+
+  ion-label {
+    color: gray !important;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+}
+
+ion-item {
+  --highlight-color-valid: var(--ion-color-dark-shade);
+  --highlight-color-invalid: transparent;
+  --highlight-color-focused: var(--ion-color-dark-shade);
+}
